@@ -23,6 +23,9 @@ module.exports = {
     // Deleting default entry
     delete config.entry.app
 
+    // Changing `@` alias to another folder
+    config.resolve.alias['@'] = 'packages/'
+
     // Added new entries based on src files
     config.entry = getEntries()
   },
