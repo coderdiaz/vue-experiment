@@ -1,0 +1,12 @@
+{
+  "watch": [
+    "src",
+    "packages"
+  ],
+  "ext": "js,json",
+  "ignore": [
+    ".git",
+    "node_modules/**"
+  ],
+  "exec": "yarn library:build && yarn scripts:build"
+}
