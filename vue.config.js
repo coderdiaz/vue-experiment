@@ -23,8 +23,9 @@ module.exports = {
     // Deleting default entry
     delete config.entry.app
 
-    // Changing `@` alias to another folder
+    //  Webpack alias
     config.resolve.alias['@'] = 'packages/'
+    config.resolve.alias['vue$'] = 'vue/dist/vue.common.js'
 
     // Added new entries based on src files
     config.entry = getEntries()
